@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Minesweeper</title>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="intro">
+				<h1>Minesweeper</h1>
+                <button>Let's Play</button>
+            </div>
+            <div class="match fadeOut">
+                <div class="grid"></div>
+                <div>Flags left: <span id="flags-left"></span></div>
+                <div id="result"></div>
+                <div class="btn">
+                    <button class="start-btn" onclick="doTimer()">Start Timer</button>
+                </div>
+                <div>
+                    <h4 class="blink"></h4>
+                    <h5 class="timer"></h5>
+                </div>
+                <div class="reset">
+                    <button type="reset" class="reset-btn">Reset</button>
+                </div>
+            </div>
+		</div>
+		<audio src="./Button-SoundBible.com-1420500901.mp3" id="btn-sound"></audio>
+        <script src="app.js" charset="utf-8"></script>
+    </body>
+</html>
